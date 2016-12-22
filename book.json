@@ -1,0 +1,33 @@
+{
+    "gitbook" : "2.6.7",
+    "plugins": [
+        "include-codeblock",
+        "emphasize",
+        "advanced-emoji",
+        "splitter",
+        "katex",
+        "json",
+        "-highlight",
+        "prismx",
+        "ace"
+    ],
+    "pluginsConfig": {
+        "sharing": {
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "instapaper": false,
+            "vk": false,
+            "all": [
+                "facebook", "google", "twitter", 
+                    "weibo", "instapaper"
+            ]
+        },
+        "prismx": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+            ]
+        }
+    }
+}

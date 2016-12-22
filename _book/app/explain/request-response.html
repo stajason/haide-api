@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>请求与响应 | 海德流量开放平台接口文档</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-prismx/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-ace/ace.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../app/explain/signature.html" />
+    
+    
+    <link rel="prev" href="../../app/explain/revision-history.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.2"
+        data-chapter-title="请求与响应"
+        data-filepath="app/explain/request-response.md"
+        data-basepath="../.."
+        data-revision="Thu Dec 22 2016 19:28:41 GMT+0800 (HKT)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 说明</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="app/explain/revision-history.html">
+            
+                
+                    <a href="../../app/explain/revision-history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        文档修订记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="app/explain/request-response.html">
+            
+                
+                    <a href="../../app/explain/request-response.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="app/explain/signature.html">
+            
+                
+                    <a href="../../app/explain/signature.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        签名
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 接口列表</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="app/interface/access-token.html">
+            
+                
+                    <a href="../../app/interface/access-token.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        获取access_token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="app/interface/product-lists.html">
+            
+                
+                    <a href="../../app/interface/product-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        获取可用的商品列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="app/interface/recharge.html">
+            
+                
+                    <a href="../../app/interface/recharge.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        提交充值订单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="app/interface/recharge-notify.html">
+            
+                
+                    <a href="../../app/interface/recharge-notify.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        充值结果回调
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="app/interface/balance.html">
+            
+                
+                    <a href="../../app/interface/balance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        获取账号余额
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="app/interface/order-detail.html">
+            
+                
+                    <a href="../../app/interface/order-detail.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        获取某一订单详情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="app/interface/order-lists.html">
+            
+                
+                    <a href="../../app/interface/order-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        获取订单列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="app/interface/phone-data.html">
+            
+                
+                    <a href="../../app/interface/phone-data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        获取号码信息
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="app/interface/channel-notify.html">
+            
+                
+                    <a href="../../app/interface/channel-notify.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        通道实时消息推送
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 错误编码</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="app/error/errorcode.html">
+            
+                
+                    <a href="../../app/error/errorcode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        errcode状态码
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >海德流量开放平台接口文档</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h3 id="1&#x8BF7;&#x6C42;">1.&#x8BF7;&#x6C42;</h3>
+<ul>
+<li>&#x6B63;&#x5F0F;&#x8D26;&#x53F7;&#x7684;client_id&#x4E0E;client_secret&#x7531;&#x6D77;&#x5FB7;&#x4FE1;&#x606F;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;&#x63D0;&#x4F9B;&#x7ED9;&#x5408;&#x4F5C;&#x5546;</li>
+<li>&#x6240;&#x6709;POST&#x8BF7;&#x6C42;http header&#x8BBE;&#x7F6E;Content-Type&#x4E3A;application/json&#xFF0C;charset&#x4E3A;utf-8</li>
+<li><p>POST&#x8BF7;&#x6C42;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x5747;&#x4E3A;JSON</p>
+</li>
+<li><p>&#x6D4B;&#x8BD5;&#x8D26;&#x53F7;</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">client_id</td>
+<td style="text-align:left">flow3355e802d44ay95yeev2</td>
+</tr>
+<tr>
+<td style="text-align:left">client_secret</td>
+<td style="text-align:left">eal0ycl5argvq8v3cthm5qnzq1ljqf1429506832</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2&#x54CD;&#x5E94;">2.&#x54CD;&#x5E94;</h3>
+<ul>
+<li>&#x54CD;&#x5E94;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x5747;&#x4E3A;JSON</li>
+<li>&#x6240;&#x6709;&#x63A5;&#x53E3;&#x90FD;&#x4F1A;&#x7EDF;&#x4E00;&#x8FD4;&#x56DE;errcode&#x548C;errmsg&#x4E24;&#x4E2A;&#x53C2;&#x6570;</li>
+<li>&#x6B63;&#x5E38;&#x7684;&#x8FD4;&#x56DE;&#xFF1A;<pre><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;errcode&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;errmsg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>&#x9519;&#x8BEF;&#x7684;&#x8FD4;&#x56DE;&#xFF1A;<pre><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;errcode&quot;</span><span class="token operator">:</span> <span class="token number">50001</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;errmsg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;client_id&#x6216;&#x8005;client_secret&#x53C2;&#x6570;&#x6709;&#x8BEF;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../app/explain/revision-history.html" class="navigation navigation-prev " aria-label="Previous page: 文档修订记录"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../app/explain/signature.html" class="navigation navigation-next " aria-label="Next page: 签名"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ace/ace/ace.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ace/ace.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"prismx":{"css":["prismjs/themes/prism-solarizedlight.css"]},"include-codeblock":{},"emphasize":{},"advanced-emoji":{"embedEmojis":false},"splitter":{},"katex":{},"json":{"output":"output.json"},"ace":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

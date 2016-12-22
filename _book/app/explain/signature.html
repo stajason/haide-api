@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>签名 | 海德流量开放平台接口文档</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-prismx/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-ace/ace.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../app/interface/access-token.html" />
+    
+    
+    <link rel="prev" href="../../app/explain/request-response.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.3"
+        data-chapter-title="签名"
+        data-filepath="app/explain/signature.md"
+        data-basepath="../.."
+        data-revision="Thu Dec 22 2016 19:28:41 GMT+0800 (HKT)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 说明</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="app/explain/revision-history.html">
+            
+                
+                    <a href="../../app/explain/revision-history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        文档修订记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="app/explain/request-response.html">
+            
+                
+                    <a href="../../app/explain/request-response.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        请求与响应
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="app/explain/signature.html">
+            
+                
+                    <a href="../../app/explain/signature.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        签名
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 接口列表</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="app/interface/access-token.html">
+            
+                
+                    <a href="../../app/interface/access-token.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        获取access_token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="app/interface/product-lists.html">
+            
+                
+                    <a href="../../app/interface/product-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        获取可用的商品列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="app/interface/recharge.html">
+            
+                
+                    <a href="../../app/interface/recharge.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        提交充值订单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="app/interface/recharge-notify.html">
+            
+                
+                    <a href="../../app/interface/recharge-notify.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        充值结果回调
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="app/interface/balance.html">
+            
+                
+                    <a href="../../app/interface/balance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        获取账号余额
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="app/interface/order-detail.html">
+            
+                
+                    <a href="../../app/interface/order-detail.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        获取某一订单详情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="app/interface/order-lists.html">
+            
+                
+                    <a href="../../app/interface/order-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        获取订单列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="app/interface/phone-data.html">
+            
+                
+                    <a href="../../app/interface/phone-data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        获取号码信息
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="app/interface/channel-notify.html">
+            
+                
+                    <a href="../../app/interface/channel-notify.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        通道实时消息推送
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 错误编码</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="app/error/errorcode.html">
+            
+                
+                    <a href="../../app/error/errorcode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        errcode状态码
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >海德流量开放平台接口文档</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h3 id="&#x7B7E;&#x540D;">&#x7B7E;&#x540D;</h3>
+<ul>
+<li>&#x5728;&#x63D0;&#x4EA4;&#x8BA2;&#x5355;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5C06;&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;&#x7B7E;&#x540D;&#x52A0;&#x5BC6;</li>
+<li>access_token&#x548C;sign&#x4E0D;&#x53C2;&#x4E0E;&#x52A0;&#x5BC6;</li>
+<li>&#x52A0;&#x5BC6;/&#x6821;&#x9A8C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<blockquote>
+<ol>
+<li>&#x5C06;&#x63D0;&#x4EA4;&#x7684;&#x53C2;&#x6570;&#x6309;&#x7167;&#x53C2;&#x6570;&#x540D;&#x8FDB;&#x884C;&#x5B57;&#x5178;&#x5E8F;&#x6392;&#x5E8F;<font color="red">(&#x53C2;&#x6570;&#x6392;&#x5E8F;&#x4E2D;&#x9700;&#x8981;&#x52A0;&#x5165;client_id)</font></li>
+<li>&#x5C06;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;sha1&#x52A0;&#x5BC6;&#xFF0C;&#x62FC;&#x63A5;&#x7684;&#x65B9;&#x5F0F;&#x4F8B;&#x5B50;&#xFF1A;callback_url=xxx&amp;client_id=xxx&amp;number=xxx&amp;product_id=xxx</li>
+<li>&#x5C06;&#x83B7;&#x5F97;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5927;&#x5199;</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x82E5;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x7B7E;&#x540D;&#x9519;&#x8BEF;&#x70B9;&#x51FB;&#x4EE5;&#x4E0B;&#x94FE;&#x63A5;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;<font color="red">&#xFF08;&#x7B7E;&#x540D;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#xFF09;</font><a href="http://www.xunion.me/admin/open/checksign" target="_blank">http://www.xunion.me/admin/open/checksign</a></p>
+</li>
+<li><p>PHP demo&#xFF1A;</p>
+</li>
+</ul>
+<pre><code class="lang-php">    <span class="token comment" spellcheck="true">/**
+     * &#x683C;&#x5F0F;&#x5316;&#x53C2;&#x6570;&#xFF0C;&#x7B7E;&#x540D;&#x8FC7;&#x7A0B;&#x9700;&#x8981;&#x4F7F;&#x7528;
+     * @param array $paraMap &#x7B7E;&#x540D;&#x5FC5;&#x9700;&#x53C2;&#x6570;
+     * @param boolen $urlencode &#x4E2D;&#x6587;&#x5B57;&#x7B26;&#x8F6C;&#x6362;&#x4E3A;&#x5341;&#x516D;&#x8FDB;&#x5236;
+     * @return string $reqPar &#x62FC;&#x63A5;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">formatBizQueryParaMap</span><span class="token punctuation">(</span><span class="token variable">$paraMap</span><span class="token punctuation">,</span> <span class="token variable">$urlencode</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$buff</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+        <span class="token function">ksort</span><span class="token punctuation">(</span><span class="token variable">$paraMap</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$paraMap</span> <span class="token keyword">as</span> <span class="token variable">$key</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$urlencode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+               <span class="token variable">$val</span> <span class="token operator">=</span> <span class="token function">urlencode</span><span class="token punctuation">(</span><span class="token variable">$val</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token variable">$buff</span> <span class="token punctuation">.</span><span class="token operator">=</span> <span class="token variable">$key</span> <span class="token punctuation">.</span><span class="token string">&quot;=&quot;</span><span class="token punctuation">.</span> <span class="token variable">$val</span> <span class="token punctuation">.</span><span class="token string">&quot;&amp;&quot;</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token variable">$reqPar</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">strlen</span><span class="token punctuation">(</span><span class="token variable">$buff</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token variable">$reqPar</span> <span class="token operator">=</span> <span class="token function">substr</span><span class="token punctuation">(</span><span class="token variable">$buff</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token variable">$reqPar</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * &#x751F;&#x6210;&#x7B7E;&#x540D;
+     * @param array $data &#x751F;&#x6210;&#x7B7E;&#x540D;&#x6240;&#x9700;&#x53C2;&#x6570;
+     * @return string $result_  &#x52A0;&#x5BC6;&#x540E;&#x7684;&#x7B7E;&#x540D;
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">getSign</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$data</span> <span class="token keyword">as</span> <span class="token variable">$key</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token variable">$Parameters</span><span class="token punctuation">[</span><span class="token variable">$key</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$val</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">// &#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E00;&#xFF1A;&#x6309;&#x5B57;&#x5178;&#x5E8F;&#x6392;&#x5E8F;&#x53C2;&#x6570;</span>
+        <span class="token function">ksort</span><span class="token punctuation">(</span><span class="token variable">$Parameters</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$String</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">formatBizQueryParaMap</span><span class="token punctuation">(</span><span class="token variable">$Parameters</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// &#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E8C;&#xFF1A;sha1&#x52A0;&#x5BC6;</span>
+        <span class="token variable">$String</span> <span class="token operator">=</span> <span class="token function">sha1</span><span class="token punctuation">(</span><span class="token variable">$String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// &#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E09;&#xFF1A;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x8F6C;&#x4E3A;&#x5927;&#x5199;</span>
+        <span class="token variable">$result_</span> <span class="token operator">=</span> <span class="token function">strtoupper</span><span class="token punctuation">(</span><span class="token variable">$String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token variable">$result_</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * &#x8C03;&#x7528;&#x52A0;&#x5BC6;&#x7B7E;&#x540D;&#x65B9;&#x6CD5;
+     */</span>
+    <span class="token variable">$signature</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getSign</span><span class="token punctuation">(</span>
+        <span class="token keyword">array</span><span class="token punctuation">(</span>
+            <span class="token string">&apos;client_id&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token variable">$client_id</span><span class="token punctuation">,</span>
+            <span class="token string">&apos;number&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token string">&apos;15876598724&apos;</span><span class="token punctuation">,</span> 
+            <span class="token string">&apos;product_id&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token string">&apos;2_10&apos;</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../app/explain/request-response.html" class="navigation navigation-prev " aria-label="Previous page: 请求与响应"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../app/interface/access-token.html" class="navigation navigation-next " aria-label="Next page: 获取access_token"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ace/ace/ace.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ace/ace.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"prismx":{"css":["prismjs/themes/prism-solarizedlight.css"]},"include-codeblock":{},"emphasize":{},"advanced-emoji":{"embedEmojis":false},"splitter":{},"katex":{},"json":{"output":"output.json"},"ace":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
