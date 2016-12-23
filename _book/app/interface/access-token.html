@@ -73,7 +73,7 @@
         data-chapter-title="获取access_token"
         data-filepath="app/interface/access-token.md"
         data-basepath="../.."
-        data-revision="Thu Dec 22 2016 19:28:41 GMT+0800 (HKT)"
+        data-revision="Fri Dec 23 2016 11:51:13 GMT+0800 (HKT)"
         data-innerlanguage="">
     
 
@@ -336,6 +336,34 @@
             
         </li>
     
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 样例</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="app/demos/php.html">
+            
+                
+                    <a href="../../app/demos/php.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        PHP样例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
 
             
@@ -451,32 +479,6 @@ Content-Type<span class="token operator">:</span> application/json
 </tr>
 </tbody>
 </table>
-<ul>
-<li>PHP demo&#xFF1A;</li>
-</ul>
-<pre><code class="lang-php"><span class="token variable">$ch</span> <span class="token operator">=</span> <span class="token function">curl_init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token variable">$data</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
-    <span class="token string">&apos;client_id&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&apos;flow3355e802d44ay95yeev2&apos;</span><span class="token punctuation">,</span>
-    <span class="token string">&apos;client_secret&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&apos;eal0ycl5argvq8v3cthm5qnzq1ljqf1429506832&apos;</span><span class="token punctuation">,</span>
-    <span class="token string">&apos;grant_type&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&apos;client_credential&apos;</span>
-<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token variable">$options</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
-    <span class="token constant">CURLOPT_URL</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&apos;http://api.xunion.me/v1/auth/token&apos;</span><span class="token punctuation">,</span>
-    <span class="token constant">CURLOPT_RETURNTRANSFER</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token constant">CURLOPT_POST</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token constant">CURLOPT_HTTPHEADER</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token string">&quot;Content-Type: application/json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-<span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token variable">$options</span><span class="token punctuation">[</span><span class="token constant">CURLOPT_POSTFIELDS</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">json_encode</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token function">curl_setopt_array</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">,</span> <span class="token variable">$options</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token variable">$response</span> <span class="token operator">=</span> <span class="token function">curl_exec</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token variable">$resp_status</span> <span class="token operator">=</span> <span class="token function">curl_getinfo</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token function">curl_close</span><span class="token punctuation">(</span><span class="token variable">$ch</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">intval</span><span class="token punctuation">(</span><span class="token variable">$resp_status</span><span class="token punctuation">[</span><span class="token string">&quot;http_code&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$response</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span><span class="token string">&apos;curl post error&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
 
                     
                     </section>

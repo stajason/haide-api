@@ -73,7 +73,7 @@
         data-chapter-title="签名"
         data-filepath="app/explain/signature.md"
         data-basepath="../.."
-        data-revision="Thu Dec 22 2016 19:28:41 GMT+0800 (HKT)"
+        data-revision="Fri Dec 23 2016 11:51:13 GMT+0800 (HKT)"
         data-innerlanguage="">
     
 
@@ -336,6 +336,34 @@
             
         </li>
     
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 样例</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="app/demos/php.html">
+            
+                
+                    <a href="../../app/demos/php.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        PHP样例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
 
             
@@ -424,9 +452,11 @@
         <span class="token comment" spellcheck="true">// &#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E00;&#xFF1A;&#x6309;&#x5B57;&#x5178;&#x5E8F;&#x6392;&#x5E8F;&#x53C2;&#x6570;</span>
         <span class="token function">ksort</span><span class="token punctuation">(</span><span class="token variable">$Parameters</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token variable">$String</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">formatBizQueryParaMap</span><span class="token punctuation">(</span><span class="token variable">$Parameters</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// &#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E8C;&#xFF1A;sha1&#x52A0;&#x5BC6;</span>
+        <span class="token comment" spellcheck="true">//&#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E8C;&#xFF1A;&#x5728;$String&#x540E;&#x52A0;&#x5165;client_id</span>
+        <span class="token variable">$String</span> <span class="token operator">=</span> <span class="token variable">$String</span> <span class="token punctuation">.</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">client_id</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//&#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E09;&#xFF1A;sha1&#x52A0;&#x5BC6;</span>
         <span class="token variable">$String</span> <span class="token operator">=</span> <span class="token function">sha1</span><span class="token punctuation">(</span><span class="token variable">$String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// &#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x4E09;&#xFF1A;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x8F6C;&#x4E3A;&#x5927;&#x5199;</span>
+        <span class="token comment" spellcheck="true">//&#x7B7E;&#x540D;&#x6B65;&#x9AA4;&#x56DB;&#xFF1A;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x8F6C;&#x4E3A;&#x5927;&#x5199;</span>
         <span class="token variable">$result_</span> <span class="token operator">=</span> <span class="token function">strtoupper</span><span class="token punctuation">(</span><span class="token variable">$String</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> <span class="token variable">$result_</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -436,7 +466,7 @@
      */</span>
     <span class="token variable">$signature</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getSign</span><span class="token punctuation">(</span>
         <span class="token keyword">array</span><span class="token punctuation">(</span>
-            <span class="token string">&apos;client_id&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token variable">$client_id</span><span class="token punctuation">,</span>
+            <span class="token string">&apos;client_id&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">client_id</span><span class="token punctuation">,</span>
             <span class="token string">&apos;number&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token string">&apos;15876598724&apos;</span><span class="token punctuation">,</span> 
             <span class="token string">&apos;product_id&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span><span class="token string">&apos;2_10&apos;</span>
         <span class="token punctuation">)</span>

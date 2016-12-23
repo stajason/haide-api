@@ -42,31 +42,3 @@ Content-Type: application/json
 :------------|:------------|:------------
 access_token|string 128|获取到的凭证，获取新token，旧token依然在原来的7200秒内过期
 expires_in|int 4|凭证有效时间，单位：秒
-
-
-* PHP demo：
-
-```php
-$ch = curl_init();
-$data = [
-    'client_id' => 'flow3355e802d44ay95yeev2',
-    'client_secret' => 'eal0ycl5argvq8v3cthm5qnzq1ljqf1429506832',
-    'grant_type' => 'client_credential'
-];
-$options = [
-    CURLOPT_URL => 'http://api.xunion.me/v1/auth/token',
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POST => true,
-    CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
-];
-$options[CURLOPT_POSTFIELDS] = json_encode($data);
-curl_setopt_array($ch, $options);
-$response = curl_exec($ch);
-$resp_status = curl_getinfo($ch);
-curl_close($ch);
-if (intval($resp_status["http_code"]) == 200) {
-    print_r($response);
-} else {
-    throw new Exception('curl post error');
-}
-```

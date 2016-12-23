@@ -6,6 +6,4 @@
 
 * 版本：V1.2.1.20161123_beta
 
-* Demo下载： <a href="https://pan.baidu.com/s/1boO21np">PHP语言</a>
-
-* 说明：对接过程中遇到技术性问题请移步至海德流量开放平台帮助中心，若里面没有你想提问的问题，记得要咨询客服噢^_^ https://www.zybuluo.com/jasonL/note/470375
+* 说明：对接过程中遇到技术性问题请移步至海德流量开放平台帮助中心，若里面没有你想提问的问题，记得要咨询客服噢^_^ https://stajason.gitbooks.io/api-help/content/

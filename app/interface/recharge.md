@@ -10,7 +10,7 @@ number|是|手机号码
 product_id|是|套餐编号
 callback_url|否|回调地址，可选参数，填则回调，不填则不回调（设置回调地址有两种方式：1.接口传入回调地址 2.商务在后台配置固定的回调地址。如果同时在接口传入回调地址和后台配置了固定回调地址，那么优先选择接口传入的回调地址）
 user_order_id|否|商户订单号，可选参数，非空则判断唯一性，最多支持40位的字符串
-sign|是|签名 <a href="../../app/explain/signature.html">详情见1.3</a>
+sign|是|签名 <a href="../../app/explain/signature.md">详情见1.3</a>
 
 * 请求报文demo
 

@@ -48,9 +48,11 @@
         // 签名步骤一：按字典序排序参数
         ksort($Parameters);
         $String = $this->formatBizQueryParaMap($Parameters, false);
-        // 签名步骤二：sha1加密
+        //签名步骤二：在$String后加入client_id
+        $String = $String . $this->client_id;
+        //签名步骤三：sha1加密
         $String = sha1($String);
-        // 签名步骤三：所有字符转为大写
+        //签名步骤四：所有字符转为大写
         $result_ = strtoupper($String);
         return $result_;
     }
@@ -60,7 +62,7 @@
      */
     $signature = $this->getSign(
         array(
-            'client_id' =>$client_id,
+            'client_id' =>$this->client_id,
             'number' =>'15876598724', 
             'product_id' =>'2_10'
         )

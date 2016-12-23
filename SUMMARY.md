@@ -17,3 +17,5 @@
     * [通道实时消息推送](app/interface/channel-notify.md)
 * 错误编码
     * [errcode状态码](app/error/errorcode.md)
+* 样例
+    * [PHP样例](app/demos/php.md)
